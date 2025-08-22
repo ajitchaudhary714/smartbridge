@@ -18,7 +18,7 @@ const Index = () => {
       <SEO
         title="SmartBridge | Building Future-Ready Talent"
         description="Building future-ready talent by bridging education and industry with collaborations, real-world learning, and skill-aligned programs."
-        image="https://lovable.dev/opengraph-image-p98pqg.png"
+        image="/lovable-uploads/metadata.png"
         structuredData={[
           {
             "@context": "https://schema.org",

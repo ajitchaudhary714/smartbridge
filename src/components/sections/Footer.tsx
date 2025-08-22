@@ -43,13 +43,13 @@ export default function SmartBridgeFooter() {
               >
                 <Instagram size={18} />
               </a>
-              {/* <a
-                href="https://x.com/myskillwallet"
+              <a
+                href="https://x.com/thesmartbridge"
                 target="_blank"
                 className="w-10 h-10 bg-teal-500 hover:bg-teal-600 rounded flex items-center justify-center transition-colors"
               >
                 <Twitter size={18} />
-              </a> */}
+              </a>
             </div>
           </div>
 
