@@ -115,7 +115,7 @@ export const Header = () => {
           aria-label="SmartBridge home"
         >
           <img
-            src="/lovable-uploads/sm2.png"
+            src="/lovable-uploads/sm3.png"
             alt="SmartBridge logo — Let's Bridge the Gap"
             width={240}
             height={60}
