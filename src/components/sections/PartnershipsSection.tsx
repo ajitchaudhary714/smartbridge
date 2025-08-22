@@ -123,7 +123,7 @@ const PartnershipsSection: React.FC = () => {
     (_, i) => privateUniversities.slice(i * 4, i * 4 + 4)
   );
   return (
-    <section className="container py-12 md:py-16">
+    <section className="container py-12 md:py-16 overflow-hidden">
       <div className="grid items-start gap-8 md:gap-12 grid-cols-1 lg:grid-cols-2">
         {/* Left column */}
         <article className="space-y-6">
