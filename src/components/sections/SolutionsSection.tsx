@@ -172,7 +172,7 @@ const SolutionsSection = () => {
                         <item.Icon className="h-5 w-5" aria-hidden="true" />
                       </div>
                       <div>
-                        <CardTitle className="text-lg md:text-xl h-10">
+                        <CardTitle className="text-lg h-10">
                           {item.title}
                         </CardTitle>
                       </div>
