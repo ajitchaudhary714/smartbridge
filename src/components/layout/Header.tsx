@@ -52,14 +52,14 @@ const categories: Record<CategoryKey, Category> = {
     kind: "cta",
     description:
       "End-to-end talent solutions by SmartBridge: source, skill, and onboard emerging talent with real project experience.",
-    cta: { label: "Explore", href: "https://myskillwallet.ai/company" },
+    cta: { label: "Explore", href: "/industry" },
   },
   government: {
     label: "Government",
     kind: "cta",
     description:
       "Scalable workforce development programs powered by experiential learning and AI-led initiatives for public sector impact.",
-    cta: { label: "Explore", href: "https://myskillwallet.ai/goverment" },
+    cta: { label: "Explore", href: "/government" },
   },
 };
 
