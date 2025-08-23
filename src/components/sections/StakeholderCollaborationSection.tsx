@@ -140,6 +140,63 @@ const stakeholders: StakeholderCard[] = [
     accentColor: "border-l-secondary",
     bgAccent: "group-hover:bg-secondary/5",
   },
+  //   const partners = [
+  //   {
+  //     src: "/salesforce/mns.png",
+  //     alt: "Logo 6",
+  //     imageClass: "w-28 h-24 ",
+  //   },
+  //   {
+  //     src: "/salesforce/images.png",
+  //     alt: "Logo 9",
+  //     imageClass: "w-24 h-24 ",
+  //   },
+  //   {
+  //     src: "/salesforce/AICTE.png",
+  //     alt: "Logo 11",
+  //     imageClass: "w-24 h-24 ",
+  //   },
+  //   {
+  //     src: "/salesforce/pngwings.jpeg",
+  //     alt: "Logo 12",
+  //     imageClass: "w-28 h-16 md:w-32 md:h-32",
+  //   },
+  //   {
+  //     src: "/salesforce/tnsdc-logo2.png",
+  //     alt: "Logo 13",
+  //     imageClass: "w-24 h-24 ",
+  //   },
+  //   {
+  //     src: "/salesforce/task.png",
+
+  //     alt: "Logo 14",
+  //     imageClass: "w-32 h-32 md:w-36 md:h-36",
+  //   },
+  //   {
+  //     src: "/salesforce/apsche_logos.png",
+
+  //     alt: "Logo 15",
+  //     imageClass: "w-28 h-16 md:w-24 md:h-20",
+  //   },
+  //   {
+  //     src: "/salesforce/up.svg",
+
+  //     alt: "Logo 15",
+  //     imageClass: "w-20 h-20 md:w-28 md:h-24",
+  //   },
+  //   {
+  //     src: "/salesforce/Iste.png",
+
+  //     alt: "Logo 15",
+  //     imageClass: "w-20 h-20 md:w-28 md:h-20",
+  //   },
+  //    {
+  //     src: "/salesforce/swayam_logo.png",
+
+  //     alt: "Logo 15",
+  //     imageClass: "w-20 h-20 md:w-28 md:h-20",
+  //   },
+  // ];
   {
     id: "government",
     title: "Government",
@@ -150,16 +207,16 @@ const stakeholders: StakeholderCard[] = [
       "Support economic growth with future-ready talent",
     ],
     partners: [
-      { name: "NSDC", logo: "🏛️" },
-      { name: "AICTE", logo: "📚" },
-      { name: "UGC", logo: "🎯" },
-      { name: "MHRD", logo: "📖" },
-      { name: "MSDE", logo: "⚙️" },
-      { name: "NCS", logo: "💼" },
-      { name: "PMKVY", logo: "🎖️" },
-      { name: "NIELIT", logo: "💻" },
-      { name: "CDAC", logo: "🔧" },
-      { name: "STPI", logo: "🏢" },
+      { name: "Ministry of Education", logo: "/salesforce/mns.png" },
+      { name: "AICTE", logo: "/salesforce/images.png" },
+      { name: "AICTE", logo: "/salesforce/AICTE.png" },
+      { name: "NSDC", logo: "/salesforce/pngwings.jpeg" },
+      { name: "TASK", logo: "/salesforce/task.png" },
+      { name: "TNSDC", logo: "/salesforce/tnsdc-logo2.png" },
+      { name: "APSCHE", logo: "/salesforce/apsche_logos.png" },
+      { name: "UP Government", logo: "/salesforce/up.svg" },
+      { name: "ISTE", logo: "/salesforce/Iste.png" },
+      { name: "SWAYAM", logo: "/salesforce/swayam_logo.png" },
     ],
     icon: Landmark,
     accentColor: "border-l-accent",
@@ -222,7 +279,7 @@ const StakeholderCollaborationSection = () => {
                     </Badge>
                   </div>
                 </div>
-                <p className="text-muted-foreground text-sm">{subtitle}</p>
+                <p className="text-muted-foreground h-8  text-sm">{subtitle}</p>
               </CardHeader>
 
               <CardContent className="space-y-6">
