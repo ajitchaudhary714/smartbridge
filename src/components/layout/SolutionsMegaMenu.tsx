@@ -189,7 +189,6 @@ export function SolutionsMegaMenu() {
                       <Button variant="secondary" size="sm" asChild>
                         <a
                           href={cat.cta.href}
-                          target="_blank"
                           aria-label={`${cat.label} — Explore`}
                         >
                           Explore
