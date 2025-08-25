@@ -84,7 +84,7 @@ export default function SmartBridgeFooter() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="https://myskillwallet.ai/credit-course"
                   className="text-gray-300 hover:text-white text-sm transition-colors"
                 >
                   Credit Courses
@@ -92,7 +92,7 @@ export default function SmartBridgeFooter() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://myskillwallet.ai/virtual-internship-program"
                   className="text-gray-300 hover:text-white text-sm transition-colors"
                 >
                   Virtual Internship Programs
