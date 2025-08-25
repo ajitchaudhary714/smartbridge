@@ -9,46 +9,43 @@ const TechSuccessCarousel = () => {
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
-  const techSuccessStories = [
+  const siSuccessStories = [
     {
-      partner: "Google",
-      logo: "🔍",
-      story:
-        "Increased hiring efficiency by 60% through our talent creation hubs",
-      impact: "500+ developers placed",
-      program: "Cloud Developer Program",
-      testimonial:
-        "SmartBridge transformed our talent acquisition process completely.",
+      partner: "TCS",
+      logo: "🏢",
+      story: "Streamlined campus-to-company pipeline with 90% retention rate",
+      impact: "2000+ placements",
+      program: "Digital Transformation Track",
+      testimonial: "SmartBridge is our trusted partner for talent acquisition.",
     },
     {
-      partner: "IBM",
-      logo: "🔵",
+      partner: "Wipro",
+      logo: "🌐",
       story:
-        "Built specialized AI/ML talent pipeline reducing time-to-hire by 45%",
-      impact: "300+ AI specialists",
-      program: "AI Innovation Hub",
+        "Implemented hire-train-deploy model reducing onboarding time by 50%",
+      impact: "1500+ deployments",
+      program: "Enterprise Solutions Program",
       testimonial:
-        "The quality of candidates exceeded our expectations significantly.",
+        "The candidates come fully prepared for immediate deployment.",
     },
     {
-      partner: "Salesforce",
-      logo: "☁️",
+      partner: "Accenture",
+      logo: "🔷",
       story:
-        "Co-created CRM specialization program with 95% job placement rate",
-      impact: "800+ CRM developers",
-      program: "Salesforce Academy",
-      testimonial:
-        "Our partnership with SmartBridge is driving innovation forward.",
+        "Built consulting-ready talent pool with specialized industry knowledge",
+      impact: "1200+ consultants",
+      program: "Business Consulting Track",
+      testimonial: "Quality and speed of talent delivery is exceptional.",
     },
     {
-      partner: "AWS",
-      logo: "🚀",
+      partner: "Deloitte",
+      logo: "💎",
       story:
-        "Developed cloud-native curriculum delivering job-ready professionals",
-      impact: "1000+ cloud engineers",
-      program: "Cloud Solutions Track",
+        "Created role-specific training programs with 98% client satisfaction",
+      impact: "800+ specialists",
+      program: "Advisory Excellence Program",
       testimonial:
-        "SmartBridge understands our technical requirements perfectly.",
+        "SmartBridge delivers exactly what we need, when we need it.",
     },
   ];
 
@@ -99,14 +96,17 @@ const TechSuccessCarousel = () => {
         className="flex overflow-x-auto no-scrollbar space-x-4 px-4 pb-2 "
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
-        {techSuccessStories.map((story, index) => (
-          <div className="flex-shrink-0 w-80 p-6 bg-gradient-to-br from-blue-50 to-white border border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 rounded-lg">
+        {siSuccessStories.map((story, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-80 p-8 bg-gradient-to-br from-purple-50 to-white border border-purple-200 shadow-sm hover:shadow-md transition-all duration-300 rounded-lg"
+          >
             {/* Company Header */}
             <div className="text-center mb-8">
               <h4 className="text-2xl font-bold text-gray-900 mb-2">
                 {story.partner}
               </h4>
-              <span className="text-sm font-medium text-blue-600 bg-blue-100 px-3 py-1 rounded-full">
+              <span className="text-sm font-medium text-purple-600 bg-purple-100 px-3 py-1 rounded-full">
                 {story.program}
               </span>
             </div>
@@ -126,7 +126,7 @@ const TechSuccessCarousel = () => {
 
             {/* Impact Stats */}
             <div className="text-center mb-8">
-              <div className="text-4xl font-bold text-blue-600 mb-2">
+              <div className="text-4xl font-bold text-purple-600 mb-2">
                 {story.impact.split(" ")[0]}
               </div>
               <div className="text-gray-600 font-medium">
@@ -149,7 +149,7 @@ const TechSuccessCarousel = () => {
 
             {/* Action */}
             <div className="text-center">
-              <button className="text-blue-600 hover:text-blue-700 font-medium flex items-center mx-auto transition-colors">
+              <button className="text-purple-600 hover:text-purple-700 font-medium flex items-center mx-auto transition-colors">
                 Read Full Case Study
                 <ArrowRight className="ml-2 h-4 w-4" />
               </button>
@@ -160,7 +160,7 @@ const TechSuccessCarousel = () => {
 
       {/* Dots */}
       <div className="flex justify-center gap-2 mt-6">
-        {techSuccessStories.map((_, index) => (
+        {siSuccessStories.map((_, index) => (
           <button
             key={index}
             onClick={() => scrollToIndex(index)}

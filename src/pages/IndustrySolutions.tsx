@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import IndustryInterationSuccess from "@/components/sections/IndustryInterationSuccess";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import IndustrySuccessCarousel from "@/components/sections/IndustrySuccess";
@@ -793,6 +794,9 @@ const IndustrySolutions = () => {
               <h3 className="text-2xl font-bold mb-8 text-center text-purple-900">
                 Success Stories of System Integration Partners
               </h3>
+              <div className="md:hidden">
+                <IndustryInterationSuccess />
+              </div>
               <Carousel className="w-full hidden md:block">
                 <CarouselContent>
                   {siSuccessStories.map((story, index) => (
