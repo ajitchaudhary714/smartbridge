@@ -179,12 +179,12 @@ const PartnershipSlider = () => {
               <CardHeader>
                 {/* bg-gradient-to-br ${partnership.gradient} */}
                 <div
-                  className={`aspect-video rounded-lg overflow-hidden  mb-4`}
+                  className={`aspect-video rounded-lg overflow-hidden flex justify-center items-center  mb-4`}
                 >
                   <img
                     src={partnership.image}
                     alt={partnership.title}
-                    className="w-full h-full object-contain p-6"
+                    className="w-32 h-20 object-contain p-6"
                   />
                 </div>
                 <CardTitle className="text-lg h-16">
