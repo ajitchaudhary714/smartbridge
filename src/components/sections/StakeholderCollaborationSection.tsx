@@ -208,7 +208,7 @@ const stakeholders: StakeholderCard[] = [
     ],
     partners: [
       { name: "Ministry of Education", logo: "/salesforce/mns.png" },
-      { name: "AICTE", logo: "/salesforce/images.png" },
+      // { name: "AICTE", logo: "/salesforce/images.png" },
       { name: "AICTE", logo: "/salesforce/AICTE.png" },
       { name: "NSDC", logo: "/salesforce/pngwings.jpeg" },
       { name: "TASK", logo: "/salesforce/task.png" },
