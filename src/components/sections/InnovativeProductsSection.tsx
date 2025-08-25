@@ -340,21 +340,21 @@ const InnovativeProductsSection: React.FC = () => {
           aria-label={`${currentProduct.name} screenshots`}
         >
           {currentProduct.imageUrl && (
-            <div className="rounded-xl h-64 border bg-background shadow-elevate overflow-hidden">
+            <div className="rounded-xl h-72  border bg-background shadow-elevate overflow-hidden">
               <AspectRatio ratio={16 / 9}>
                 <img
                   src={currentProduct.imageUrl}
                   alt={currentProduct.altText}
                   loading="lazy"
                   decoding="async"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-fill"
                 />
               </AspectRatio>
             </div>
           )}
 
           {currentProduct.secondImageUrl && (
-            <div className="rounded-xl border h-64 bg-background shadow-elevate overflow-hidden">
+            <div className="rounded-xl border h-72   bg-background shadow-elevate overflow-hidden">
               <AspectRatio ratio={16 / 9}>
                 <img
                   src={currentProduct.secondImageUrl}

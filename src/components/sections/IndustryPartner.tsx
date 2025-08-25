@@ -11,70 +11,14 @@ const PartnershipSlider = () => {
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
-  //   const partnerships = [
-  //     {
-  //       id: "google",
-  //       title: "Google India Edu. Programs",
-  //       year: "2022",
-  //       image: "/lovable-uploads/4ce21bf4-fae9-485f-a821-2f30a52eb62a.png",
-  //       description: "Since 2022, trained 203,000+ students...",
-  //       gradient: "from-blue-500 to-blue-600",
-  //     },
-  //     {
-  //       id: "ibm",
-  //       title: "IBM Skills Build Initiatives",
-  //       year: "2017",
-  //       image: "/lovable-uploads/4dda91db-3075-4068-8077-cf8f37f99e6b.png",
-  //       description: "With 8 years of successful partnership...",
-  //       gradient: "from-blue-800 to-blue-900",
-  //     },
-  //     {
-  //       id: "salesforce",
-  //       title: "Salesforce Workforce Development",
-  //       year: "2022",
-  //       image: "/lovable-uploads/91eda880-1fba-4770-a3c5-1828b5553129.png",
-  //       description: "Since 2022, over 100,000 students have been upskilled...",
-  //       gradient: "from-blue-600 to-cyan-500",
-  //     },
-  //     {
-  //       id: "aws",
-  //       title: "AWS Talent Alliance",
-  //       year: "2021",
-  //       image: "/lovable-uploads/53bd1a1f-ae1a-4865-bde5-ce5785725d84.png",
-  //       description: "Cloud engineering specialization program...",
-  //       gradient: "from-orange-500 to-orange-600",
-  //     },
-  //     {
-  //       id: "servicenow",
-  //       title: "ServiceNow Academic Partnership",
-  //       year: "2024",
-  //       image: "/lovable-uploads/dda1c586-04b8-4e18-aea4-27aaa9a952dc.png",
-  //       description: "Since 2024, our programs have trained 25,000 students...",
-  //       gradient: "from-purple-600 to-purple-700",
-  //     },
-  //     {
-  //       id: "mongodb",
-  //       title: "MongoDB University Partnership",
-  //       year: "2024",
-  //       image: "/lovable-uploads/145ccf09-b932-4acc-a4df-370abcd3c38e.png",
-  //       description: "Launched in 2024, trained 39,000 students...",
-  //       gradient: "from-green-600 to-green-700",
-  //     },
-  //     {
-  //       id: "pega",
-  //       title: "PEGA University Academia Program",
-  //       year: "2025",
-  //       image: "/lovable-uploads/e5c8187d-9d8a-4374-a596-10fca300c4e6.png",
-  //       description: "Business process management and automation expertise...",
-  //       gradient: "from-red-600 to-red-700",
-  //     },
-  //   ];
   const partnerships = [
     {
       id: "google",
       title: "Google India Edu. Programs",
       year: "2022",
       image: "/lovable-uploads/4ce21bf4-fae9-485f-a821-2f30a52eb62a.png",
+      width: 200,
+      height: 160,
       description:
         "Since 2022, trained 203,000+ students and 2,000+ faculty across India, with 75% from Tier 2 & 3 cities. Programs in Android, Kotlin, and Google Cloud—including internships, credit courses, and workshops—are AICTE-recognized and connect learners to Google's developer ecosystem.",
       gradient: "from-blue-500 to-blue-600",
@@ -84,6 +28,8 @@ const PartnershipSlider = () => {
       title: "IBM Skills Build Initiatives",
       year: "2017",
       image: "/lovable-uploads/4dda91db-3075-4068-8077-cf8f37f99e6b.png",
+      width: 140,
+      height: 90,
       description:
         "With 8 years of successful partnership, more than 400,000 students and 20,000+ educators have benefited. Presently, IBM SkillsBuild is helping 100,000 students in India develop Generative AI skills.",
       gradient: "from-blue-800 to-blue-900",
@@ -93,6 +39,8 @@ const PartnershipSlider = () => {
       title: "Salesforce Workforce Development",
       year: "2022",
       image: "/lovable-uploads/91eda880-1fba-4770-a3c5-1828b5553129.png",
+      width: 130,
+      height: 85,
       description:
         "Since 2022, over 100,000 students have been upskilled through the Salesforce Virtual Internship Program, with 15,000+ graduates starting careers in the Salesforce ecosystem. The programs are currently active in India, Philippines, Indonesia, and Saudi Arabia.",
       gradient: "from-blue-600 to-cyan-500",
@@ -102,6 +50,8 @@ const PartnershipSlider = () => {
       title: "AWS Talent Alliance",
       year: "2021",
       image: "/lovable-uploads/53bd1a1f-ae1a-4865-bde5-ce5785725d84.png",
+      width: 120,
+      height: 80,
       description:
         "Cloud engineering specialization program focusing on scalable solutions and modern DevOps practices.",
       gradient: "from-orange-500 to-orange-600",
@@ -110,7 +60,9 @@ const PartnershipSlider = () => {
       id: "servicenow",
       title: "ServiceNow Academic Partnership",
       year: "2024",
-      image: "/lovable-uploads/dda1c586-04b8-4e18-aea4-27aaa9a952dc.png",
+      image: "/lovable-uploads/servicenow.png",
+      width: 170,
+      height: 100,
       description:
         "Since 2024, our programs have trained 25,000 students across 20 Indian states, with nearly half from Tier 2 & Tier 3 cities. Through internships, project-based learning, and faculty training, we've built a strong ServiceNow talent pipeline, achieving good student placements.",
       gradient: "from-purple-600 to-purple-700",
@@ -119,7 +71,9 @@ const PartnershipSlider = () => {
       id: "mongodb",
       title: "MongoDB University Partnership",
       year: "2024",
-      image: "/lovable-uploads/145ccf09-b932-4acc-a4df-370abcd3c38e.png",
+      image: "/lovable-uploads/mongo.png",
+      width: 170,
+      height: 100,
       description:
         "Launched in 2024, trained 39,000 students across 9 states, with 75% from Tier 2 & 3 cities. Over 500 students certified as MongoDB Associate Developers, building a strong pipeline of MERN, backend, and database professionals.",
       gradient: "from-green-600 to-green-700",
@@ -128,13 +82,14 @@ const PartnershipSlider = () => {
       id: "pega",
       title: "PEGA University Academia Program",
       year: "2025",
-      image: "/lovable-uploads/e5c8187d-9d8a-4374-a596-10fca300c4e6.png",
+      image: "/lovable-uploads/pega.png",
+      width: 200,
+      height: 120,
       description:
         "Business process management and automation expertise through comprehensive PEGA training and certification programs.",
       gradient: "from-red-600 to-red-700",
     },
   ];
-
   const scrollAmount = 300; // pixels per arrow click
 
   const handleScroll = (direction) => {
@@ -178,13 +133,15 @@ const PartnershipSlider = () => {
             <Card className="h-full hover:shadow transition-all duration-300 hover:-translate-y-1">
               <CardHeader>
                 {/* bg-gradient-to-br ${partnership.gradient} */}
-                <div
-                  className={`aspect-video rounded-lg overflow-hidden flex justify-center items-center  mb-4`}
-                >
+                <div className="aspect-video rounded-lg overflow-hidden flex justify-center items-center mb-4">
                   <img
                     src={partnership.image}
                     alt={partnership.title}
-                    className="w-32 h-20 object-contain p-6"
+                    style={{
+                      width: `${partnership.width ?? 128}px`,
+                      height: `${partnership.height ?? 80}px`,
+                    }}
+                    className="object-contain p-6"
                   />
                 </div>
                 <CardTitle className="text-lg h-16">
