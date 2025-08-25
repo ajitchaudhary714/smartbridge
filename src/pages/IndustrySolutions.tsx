@@ -614,7 +614,7 @@ const IndustrySolutions = () => {
                 <CarouselPrevious />
                 <CarouselNext />
               </Carousel>
-            </div>
+            </div>  
             <div>
               <div className="md:hidden">
                 {" "}
