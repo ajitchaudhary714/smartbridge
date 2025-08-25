@@ -367,7 +367,7 @@ const IndustrySolutions = () => {
               <h2 className="text-2xl md:text-4xl font-bold mb-4">
                 Our Industry Partnerships
               </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-muted-foreground fon max-w-2xl mx-auto">
                 Discover our strategic partnerships that drive innovation and
                 create exceptional career opportunities
               </p>

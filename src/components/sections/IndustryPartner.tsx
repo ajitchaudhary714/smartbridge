@@ -218,7 +218,7 @@ const PartnershipSlider = () => {
             className={`rounded-full transition-all duration-300 ${
               currentIndex === index
                 ? "w-3 h-3 bg-primary"
-                : "w-2 h-2 bg-gray-300 hover:bg-gray-400"
+                : "w-3 h-3 bg-gray-300 hover:bg-gray-400"
             }`}
             aria-label={`Go to card ${index + 1}`}
           />
