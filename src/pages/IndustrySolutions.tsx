@@ -483,7 +483,7 @@ const IndustrySolutions = () => {
                   <div className="grid grid-cols-3 gap-6 items-center max-w-md mx-auto">
                     <div className="bg-white rounded-lg border border-blue-200 p-4 flex justify-center items-center h-16 shadow-sm hover:shadow-md transition-shadow">
                       <img
-                        src="/lovable-uploads/4ce21bf4-fae9-485f-a821-2f30a52eb62a.png"
+                        src="/lovable-uploads/googleImage.png"
                         alt="Google Developers"
                         className="h-6 w-auto object-contain"
                       />
@@ -504,35 +504,35 @@ const IndustrySolutions = () => {
                     </div>
                     <div className="bg-white rounded-lg border border-blue-200 p-4 flex justify-center items-center h-16 shadow-sm hover:shadow-md transition-shadow">
                       <img
-                        src="/lovable-uploads/dda1c586-04b8-4e18-aea4-27aaa9a952dc.png"
+                        src="/lovable-uploads/servicenow.png"
                         alt="ServiceNow"
                         className="h-8 w-auto object-contain"
                       />
                     </div>
                     <div className="bg-white rounded-lg border border-blue-200 p-4 flex justify-center items-center h-16 shadow-sm hover:shadow-md transition-shadow">
                       <img
-                        src="/lovable-uploads/53bd1a1f-ae1a-4865-bde5-ce5785725d84.png"
+                        src="/lovable-uploads/aws.png"
                         alt="AWS"
                         className="h-6 w-auto object-contain"
                       />
                     </div>
                     <div className="bg-white rounded-lg border border-blue-200 p-4 flex justify-center items-center h-16 shadow-sm hover:shadow-md transition-shadow">
                       <img
-                        src="/lovable-uploads/145ccf09-b932-4acc-a4df-370abcd3c38e.png"
+                        src="/lovable-uploads/mongo.png"
                         alt="MongoDB"
                         className="h-6 w-auto object-contain"
                       />
                     </div>
                     <div className="bg-white rounded-lg border border-blue-200 p-4 flex justify-center items-center h-16 shadow-sm hover:shadow-md transition-shadow">
                       <img
-                        src="/lovable-uploads/e5c8187d-9d8a-4374-a596-10fca300c4e6.png"
+                        src="/lovable-uploads/pega.png"
                         alt="Pega"
                         className="h-8 w-auto object-contain"
                       />
                     </div>
                     <div className="bg-white rounded-lg border border-blue-200 p-4 flex justify-center items-center h-16 shadow-sm hover:shadow-md transition-shadow">
                       <img
-                        src="/lovable-uploads/76fecda3-6764-45df-8821-45a4333982c0.png"
+                        src="/lovable-uploads/tableau.png"
                         alt="Tableau"
                         className="h-8 w-auto object-contain"
                       />
