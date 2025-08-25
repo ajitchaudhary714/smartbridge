@@ -400,7 +400,7 @@ const IndustrySolutions = () => {
                     <div className="rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 p-4 w-fit mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <service.Icon className="h-8 w-8 text-white" />
                     </div>
-                    <CardTitle className="text-lg text-blue-900">
+                    <CardTitle className="text-lg h-11 text-blue-900">
                       {service.title}
                     </CardTitle>
                   </CardHeader>
@@ -731,7 +731,7 @@ const IndustrySolutions = () => {
                       <img
                         src="/lovable-uploads/6d0fd616-6877-4311-83f6-4e6c31e86f25.png"
                         alt="TCS"
-                        className="h-12 w-auto object-contain"
+                        className="h-9 w-auto object-contain"
                       />
                     </div>
                     <div className="bg-white rounded-lg border border-purple-200 p-4 flex justify-center items-center h-16 shadow-sm hover:shadow-md transition-shadow">
@@ -793,7 +793,7 @@ const IndustrySolutions = () => {
               <h3 className="text-2xl font-bold mb-8 text-center text-purple-900">
                 Success Stories of System Integration Partners
               </h3>
-              <Carousel className="w-full">
+              <Carousel className="w-full hidden md:block">
                 <CarouselContent>
                   {siSuccessStories.map((story, index) => (
                     <CarouselItem

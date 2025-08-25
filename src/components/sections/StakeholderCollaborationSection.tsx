@@ -305,7 +305,7 @@ const StakeholderCollaborationSection = () => {
                   {/* Partner Logos Grid */}
                 </CardContent>
               </div>
-              <div className="space-y-4 pb-4 px-6">
+              <div className="space-y-4 pb-6 px-6">
                 <div className="space-y-3 flex-1">
                   <h4 className="text-sm font-medium text-muted-foreground">
                     Top Partners
@@ -336,7 +336,7 @@ const StakeholderCollaborationSection = () => {
                 <Button
                   variant="outline"
                   size="sm"
-                  className="w-full group-hover:border-primary group-hover:text-primary transition-all duration-300 hover:shadow-md"
+                  className="w-full group-hover:border-primary  group-hover:text-primary transition-all duration-300 hover:shadow-md"
                   asChild
                 >
                   <a
