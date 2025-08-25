@@ -188,7 +188,7 @@ const products: Product[] = [
         Icon: Search,
       },
     ],
-    imageUrl: "/lovable-uploads/74e17143-433e-4bc7-97db-a2c2e9719ce4.png",
+    imageUrl: "/lovable-uploads/impacts.png",
     altText:
       "Impact369 AI-powered data enrichment platform showing profile database management and LinkedIn enrichment analytics dashboard",
   },
@@ -340,7 +340,7 @@ const InnovativeProductsSection: React.FC = () => {
           aria-label={`${currentProduct.name} screenshots`}
         >
           {currentProduct.imageUrl && (
-            <div className="rounded-xl border bg-background shadow-elevate overflow-hidden">
+            <div className="rounded-xl h-64 border bg-background shadow-elevate overflow-hidden">
               <AspectRatio ratio={16 / 9}>
                 <img
                   src={currentProduct.imageUrl}
@@ -354,7 +354,7 @@ const InnovativeProductsSection: React.FC = () => {
           )}
 
           {currentProduct.secondImageUrl && (
-            <div className="rounded-xl border bg-background shadow-elevate overflow-hidden">
+            <div className="rounded-xl border h-64 bg-background shadow-elevate overflow-hidden">
               <AspectRatio ratio={16 / 9}>
                 <img
                   src={currentProduct.secondImageUrl}

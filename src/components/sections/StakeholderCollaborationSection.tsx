@@ -79,7 +79,7 @@ const stakeholders: StakeholderCard[] = [
         name: "TCS",
         logo: "/lovable-uploads/7e3a3a89-c84b-42b8-a98e-7b478ca4ad00.png",
       },
-      { name: "Microsoft", logo: "🟦" },
+      { name: "Microsoft", logo: "/lovable-uploads/mircrosoft.jpg" },
     ],
     icon: Building2,
     accentColor: "border-l-primary",
@@ -105,7 +105,7 @@ const stakeholders: StakeholderCard[] = [
       },
       {
         name: "KITS Autonomous",
-        logo: "/lovable-uploads/bf5dc07d-58d1-4442-9423-d4277b6d317c.png",
+        logo: "/lovable-uploads/kits.png",
       },
       {
         name: "ACE Engineering College",
