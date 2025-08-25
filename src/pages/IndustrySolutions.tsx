@@ -616,7 +616,10 @@ const IndustrySolutions = () => {
               </Carousel>
             </div>
             <div>
-              <IndustrySuccessCarousel />
+              <div className="md:hidden">
+                {" "}
+                <IndustrySuccessCarousel />
+              </div>
             </div>
           </div>
         </section>

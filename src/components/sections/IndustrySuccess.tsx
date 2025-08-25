@@ -96,7 +96,7 @@ const TechSuccessCarousel = () => {
       {/* Carousel container */}
       <div
         ref={scrollRef}
-        className="flex overflow-x-auto no-scrollbar space-x-4 px-4 scroll-smooth"
+        className="flex overflow-x-auto no-scrollbar space-x-4 px-4 pb-2 "
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {techSuccessStories.map((story, index) => (
