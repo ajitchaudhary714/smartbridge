@@ -177,8 +177,9 @@ const PartnershipSlider = () => {
           <div key={partnership.id} className="flex-shrink-0 w-80  py-2">
             <Card className="h-full hover:shadow transition-all duration-300 hover:-translate-y-1">
               <CardHeader>
+                {/* bg-gradient-to-br ${partnership.gradient} */}
                 <div
-                  className={`aspect-video rounded-lg overflow-hidden bg-gradient-to-br ${partnership.gradient} mb-4`}
+                  className={`aspect-video rounded-lg overflow-hidden  mb-4`}
                 >
                   <img
                     src={partnership.image}

@@ -38,7 +38,7 @@ const solutions: Solution[] = [
       "Credit-bearing courses co-designed with industry to map directly to in-demand roles and competencies.",
     learners: "10,000+",
     sponsorType: "Industry Sponsored",
-    href: "#credit-courses",
+    href: "https://myskillwallet.ai/credit-course",
     Icon: GraduationCap,
   },
   {
@@ -47,7 +47,7 @@ const solutions: Solution[] = [
       "Mentored, project-based internships that simulate real workflows and deliver a portfolio of outcomes.",
     learners: "25,000+",
     sponsorType: "Industry Sponsored",
-    href: "#virtual-internships",
+    href: "https://myskillwallet.ai/virtual-internship-program",
     Icon: Laptop,
   },
   {
@@ -56,7 +56,7 @@ const solutions: Solution[] = [
       "Job-readiness bootcamps focused on role-specific skills, behavioral readiness, and interview preparation.",
     learners: "15,000+",
     sponsorType: "Industry Sponsored",
-    href: "#lastmile",
+    href: "https://myskillwallet.ai/lastmile",
     Icon: Target,
   },
   {
@@ -92,16 +92,16 @@ const solutions: Solution[] = [
       "Career connect platform linking students with hiring partners through assessments and showcases.",
     learners: "30,000+",
     sponsorType: "Industry Sponsored",
-    href: "#aspirex",
+    href: "https://myskillwallet.ai/aspirex",
     Icon: Megaphone,
   },
   {
-    title: "Switch-up",
+    title: "SwitchUp",
     description:
       "Career transition pathway enabling learners to pivot into high-growth roles with guided support.",
     learners: "3,000+",
     sponsorType: "Government/CSR Funded",
-    href: "#switch-up",
+    href: "https://myskillwallet.ai/switchup/salesforce-ai-agent-developer",
     Icon: Shuffle,
   },
 ];
@@ -207,7 +207,13 @@ const SolutionsSection = () => {
                       variant="outline"
                       aria-label={`Know more about ${item.title}`}
                     >
-                      <a href={item.href || "#"}>Know more</a>
+                      <a
+                        href={item.href || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Know more
+                      </a>
                     </Button>
                   </CardFooter>
                 </Card>

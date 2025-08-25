@@ -265,42 +265,48 @@ const StakeholderCollaborationSection = () => {
           }) => (
             <Card
               key={id}
-              className={`group relative overflow-hidden border-l-4 ${accentColor} hover:shadow-elevate transition-all duration-500 hover:scale-[1.02] cursor-pointer ${bgAccent}`}
+              className={`group relative flex flex-col justify-between overflow-hidden border-l-4 ${accentColor} hover:shadow-elevate transition-all duration-500 hover:scale-[1.02] cursor-pointer ${bgAccent}`}
             >
-              <CardHeader className="space-y-4 pb-4">
-                <div className="flex items-center gap-3">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-                    <Icon className="h-6 w-6" aria-hidden="true" />
+              <div>
+                <CardHeader className="space-y-4 pb-4">
+                  <div className="flex items-center gap-3">
+                    <div className="h-12 w-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                      <Icon className="h-6 w-6" aria-hidden="true" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold">{title}</h3>
+                      <Badge variant="secondary" className="mt-1">
+                        Partnership
+                      </Badge>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold">{title}</h3>
-                    <Badge variant="secondary" className="mt-1">
-                      Partnership
-                    </Badge>
-                  </div>
-                </div>
-                <p className="text-muted-foreground h-8  text-sm">{subtitle}</p>
-              </CardHeader>
+                  <p className="text-muted-foreground h-8  text-sm">
+                    {subtitle}
+                  </p>
+                </CardHeader>
 
-              <CardContent className="space-y-6">
-                {/* Benefits */}
-                <ul
-                  className="space-y-2"
-                  aria-label={`${title} collaboration benefits`}
-                >
-                  {benefits.map((benefit, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <div
-                        className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0"
-                        aria-hidden="true"
-                      />
-                      <span className="text-sm">{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
+                <CardContent className="space-y-6">
+                  {/* Benefits */}
+                  <ul
+                    className="space-y-2"
+                    aria-label={`${title} collaboration benefits`}
+                  >
+                    {benefits.map((benefit, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <div
+                          className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0"
+                          aria-hidden="true"
+                        />
+                        <span className="text-sm">{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
 
-                {/* Partner Logos Grid */}
-                <div className="space-y-3">
+                  {/* Partner Logos Grid */}
+                </CardContent>
+              </div>
+              <div className="space-y-4 pb-4 px-6">
+                <div className="space-y-3 flex-1">
                   <h4 className="text-sm font-medium text-muted-foreground">
                     Top Partners
                   </h4>
@@ -326,9 +332,7 @@ const StakeholderCollaborationSection = () => {
                     ))}
                   </div>
                 </div>
-              </CardContent>
 
-              <CardFooter>
                 <Button
                   variant="outline"
                   size="sm"
@@ -342,7 +346,7 @@ const StakeholderCollaborationSection = () => {
                     Partner With Us
                   </a>
                 </Button>
-              </CardFooter>
+              </div>
             </Card>
           )
         )}
