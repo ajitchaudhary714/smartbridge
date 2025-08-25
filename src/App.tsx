@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy"; // ✅ added
 import Terms from "./pages/Terms";
-import IndustrySolutions from "./pages/IndustrySolutions";
+import IndustrySolutions from "./pages/solution/IndustrySolutions";
 import GovernmentSolutions from "./pages/GovernmentSolutions";
 
 const queryClient = new QueryClient();
