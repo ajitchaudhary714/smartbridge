@@ -94,7 +94,7 @@ export default function ContactPage() {
               >
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <div className="bg-gradient-to-br from-smartbridge-icon-from to-smartbridge-icon-to p-3 rounded-full mr-4">
+                    <div className="bg-blue-500 p-3 rounded-full mr-4">
                       <MapPin className="text-white text-xl h-6 w-6" />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-800">
@@ -120,7 +120,7 @@ export default function ContactPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
               Send Us a Message
             </h2>
-            <p className="text-xl text-smartbridge-primary-light max-w-2xl mx-auto">
+            <p className="text-xl text-smartbridge-primary-light max-w-4xl mx-auto">
               Have a question or want to partner with us? We'd love to hear from
               you.
             </p>
