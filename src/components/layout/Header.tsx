@@ -128,7 +128,7 @@ export const Header = () => {
           <NavLink to="/" end className={navCls}>
             Home
           </NavLink>
-          <NavLink to="/" className="story-link">
+          <NavLink to="/aboutus" className="story-link">
             About Us
           </NavLink>
           <SolutionsMegaMenu />
@@ -143,7 +143,7 @@ export const Header = () => {
           >
             Careers
           </a>
-          <a href="#contact" className="story-link">
+          <a href="/contactus" className="story-link">
             Contact
           </a>
         </nav>
@@ -184,7 +184,7 @@ export const Header = () => {
                 Home
               </NavLink>
               <NavLink
-                to="/about"
+                to="/aboutus"
                 className="story-link"
                 onClick={() => setMobileOpen(false)}
               >
@@ -512,7 +512,7 @@ export const Header = () => {
                 Careers
               </a>
               <a
-                href="#contact"
+                href="/contactus"
                 className="story-link"
                 onClick={() => setMobileOpen(false)}
               >

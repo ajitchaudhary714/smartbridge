@@ -38,9 +38,9 @@ const PartnershipSlider = () => {
       id: "salesforce",
       title: "Salesforce Workforce Development",
       year: "2022",
-      image: "/lovable-uploads/91eda880-1fba-4770-a3c5-1828b5553129.png",
-      width: 130,
-      height: 85,
+      image: "/lovable-uploads/salesforcetrab.png",
+      width: 350,
+      height: 220,
       description:
         "Since 2022, over 100,000 students have been upskilled through the Salesforce Virtual Internship Program, with 15,000+ graduates starting careers in the Salesforce ecosystem. The programs are currently active in India, Philippines, Indonesia, and Saudi Arabia.",
       gradient: "from-blue-600 to-cyan-500",

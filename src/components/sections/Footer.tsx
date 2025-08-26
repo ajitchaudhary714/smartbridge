@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 export default function SmartBridgeFooter() {
   return (
@@ -108,23 +109,28 @@ export default function SmartBridgeFooter() {
             </h3>
 
             {/* India Office */}
-            <div className="mb-6">
-              <h4 className="text-white font-medium mb-2">India office</h4>
+            <div className="mb-4">
+              <h4 className="text-white font-medium uppercase mb-2">
+                India office
+              </h4>
               <address className="text-gray-300 text-sm leading-relaxed not-italic">
-                6th Floor, Sundarayya Vignana
-                <br />
-                Kendram, Technical Block,
-                <br />
-                Madhava Reddy Colony,
-                <br />
-                Gachibowli, Hyderabad, Telangana -<br />
-                500032
+                6th Floor, Sundarayya Vignana Kendram, Technical Block, Madhava
+                Reddy Colony, Gachibowli, Hyderabad, Telangana - 500032
+              </address>
+            </div>
+            <div className="mb-4">
+              <h4 className="text-white font-medium mb-2">NOIDA OFFICE</h4>
+              <address className="text-gray-300 text-sm leading-relaxed not-italic">
+                3rd Floor, Big Box Co-working Space, Office No. 303, Plot No. 8,
+                Sector 142, Noida, Uttar Pradesh – 201301
               </address>
             </div>
 
             {/* Singapore Office */}
-            <div className="mb-6">
-              <h4 className="text-white font-medium mb-2">Singapore office</h4>
+            <div className="mb-4">
+              <h4 className="text-white uppercase font-medium mb-2">
+                Singapore office
+              </h4>
               <address className="text-gray-300 text-sm leading-relaxed not-italic">
                 78 Bayshore Rd, #18-24, Singapore
                 <br />
@@ -134,7 +140,8 @@ export default function SmartBridgeFooter() {
 
             {/* Contact Info */}
             <div className="space-y-2">
-              <p className="text-gray-300 text-sm">
+              <p className="flex items-center gap-2 text-gray-300 text-sm">
+                <Mail className="w-4 h-4 text-gray-400" />
                 <a
                   href="mailto:info@thesmartbridge.com"
                   className="hover:text-white transition-colors"
@@ -142,8 +149,9 @@ export default function SmartBridgeFooter() {
                   info@thesmartbridge.com
                 </a>
               </p>
-              <p className="text-gray-300 text-sm">
-                Office -{" "}
+
+              <p className="flex items-center gap-2 text-gray-300 text-sm">
+                <Phone className="w-4 h-4 text-gray-400" />
                 <a
                   href="tel:+916304320044"
                   className="hover:text-white transition-colors"
