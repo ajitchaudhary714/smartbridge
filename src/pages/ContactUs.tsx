@@ -23,9 +23,9 @@ const offices = [
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen ">
       {/* Hero Section */}
-      <section className="bg-blue-600 py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-primary py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
             Get In Touch
@@ -45,7 +45,7 @@ export default function ContactPage() {
             <Card className="bg-gradient-to-br from-smartbridge-card-from to-smartbridge-card-to border-smartbridge-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
-                  <div className="bg-blue-600 p-3 rounded-full mr-4">
+                  <div className="bg-gradient-primary p-3 rounded-full mr-4">
                     <Phone className="text-white text-xl h-6 w-6" />
                   </div>
                   <h3 className="text-2xl font-semibold text-gray-800">
@@ -60,7 +60,7 @@ export default function ContactPage() {
             <Card className="bg-gradient-to-br from-smartbridge-card-from to-smartbridge-card-to border-smartbridge-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
-                  <div className="bg-blue-600 p-3 rounded-full mr-4">
+                  <div className="bg-gradient-primary p-3 rounded-full mr-4">
                     <Mail className="text-white text-xl h-6 w-6" />
                   </div>
                   <h3 className="text-2xl font-semibold text-gray-800">
@@ -94,7 +94,7 @@ export default function ContactPage() {
               >
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <div className="bg-blue-500 p-3 rounded-full mr-4">
+                    <div className="bg-gradient-primary p-3 rounded-full mr-4">
                       <MapPin className="text-white text-xl h-6 w-6" />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-800">
@@ -114,13 +114,13 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form (Static) */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-smartbridge-primary via-smartbridge-secondary to-smartbridge-accent">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-primary">
+        <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Send Us a Message
             </h2>
-            <p className="text-xl text-smartbridge-primary-light max-w-4xl mx-auto">
+            <p className="text-xl text-white max-w-4xl mx-auto">
               Have a question or want to partner with us? We'd love to hear from
               you.
             </p>
@@ -164,7 +164,7 @@ export default function ContactPage() {
                 <div className="text-center">
                   <Button
                     type="button"
-                    className="bg-gradient-to-r from-smartbridge-primary to-smartbridge-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg"
+                    className="bg-gradient-primary text-white px-8 py-4 rounded-lg font-semibold text-lg"
                   >
                     <Send className="mr-2 h-5 w-5" />
                     Send Message
