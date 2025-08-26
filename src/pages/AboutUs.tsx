@@ -101,7 +101,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="hero-gradient bg-blue-600 text-white pt-24 pb-20">
+      <section className="hero-gradient bg-gradient-primary text-white pt-24 pb-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-5xl font-bold mb-6 animate-fade-in">
             Transforming Education <span className="text-accent">At Scale</span>

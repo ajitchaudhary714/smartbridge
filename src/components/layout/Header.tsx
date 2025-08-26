@@ -69,40 +69,9 @@ export const Header = () => {
   const [active, setActive] = useState<CategoryKey>("universities");
   const cat = categories[active];
 
-  // const products = [
-  //   {
-  //     key: "skill-wallet",
-  //     label: "Skill Wallet",
-  //     href: "https://myskillwallet.ai/",
-  //     img: "/lovable-uploads/e9d1567c-84fe-4292-8ce7-8c7d4aca0e90.png",
-  //     desc: "Verified skill passport to showcase competencies.",
-  //   },
-  //   {
-  //     key: "troven",
-  //     label: "Troven",
-  //     href: "https://troven.ai/",
-  //     img: "/lovable-uploads/719a975d-9642-45a6-ad25-460c2326fbf5.png",
-  //     desc: "AI-assisted assessments and hiring with real project evidence.",
-  //   },
-  //   {
-  //     key: "smartinternz",
-  //     label: "SmartInternz",
-  //     href: "https://smartinternz.com/",
-  //     img: "/lovable-uploads/da55e47b-065d-4c01-b125-33f39b2efe7b.png",
-  //     desc: "Experiential learning and virtual internships platform.",
-  //   },
-  //   {
-  //     key: "impact369",
-  //     label: "Impact369",
-  //     href: "https://impact369.com/",
-  //     img: "/placeholder.svg",
-  //     desc: "Program impact tracking and outcome analytics.",
-  //   },
-  // ] as const;
-
   const navCls = ({ isActive }: { isActive: boolean }) =>
     `${
-      isActive ? "text-primary" : "text-muted-foreground hover:text-foreground"
+      isActive ? "text-primary" : "text-gray-700 hover:text-gray-400"
     } transition-colors`;
 
   return (
@@ -128,38 +97,31 @@ export const Header = () => {
           <NavLink to="/" end className={navCls}>
             Home
           </NavLink>
-          <NavLink to="/aboutus" className="story-link">
+          <NavLink to="/aboutus" end className={navCls}>
             About Us
           </NavLink>
           <SolutionsMegaMenu />
           <ProductsMegaMenu />
-          <a href="#events" className="story-link">
+          <a href="#events" className="story-link hover:text-gray-400">
             Events
           </a>
           <a
             href="https://careers.smartinternz.com/jobs/Careers"
             target="_blank"
-            className="story-link"
+            className="story-link hover:text-gray-400"
           >
             Careers
           </a>
-          <a href="/contactus" className="story-link">
+          {/* <a href="/contactus" className="story-link">
             Contact
-          </a>
+          </a> */}
         </nav>
 
         {/* Actions + Mobile Button */}
         <div className="flex items-center gap-3">
-          <Button
-            variant="hero"
-            className="hidden md:inline-flex"
-            onClick={() =>
-              window.open("https://myskillwallet.ai/login", "_blank")
-            }
-          >
-            Get Started
-          </Button>
-
+          <Link to="/contactus" className="hidden md:block">
+            <Button variant="hero">Get In Touch</Button>
+          </Link>
           {/* Hamburger */}
           <button
             className="md:hidden "
@@ -511,24 +473,20 @@ export const Header = () => {
               >
                 Careers
               </a>
-              <a
+              {/* <a
                 href="/contactus"
                 className="story-link"
                 onClick={() => setMobileOpen(false)}
               >
                 Contact
-              </a>
+              </a> */}
             </div>
             <div className="mt-auto">
-              <Button
-                variant="hero"
-                className="mt-4 w-full"
-                onClick={() =>
-                  window.open("https://myskillwallet.ai/login", "_blank")
-                }
-              >
-                Get Started
-              </Button>
+              <Link to="/contactus">
+                <Button variant="hero" className="mt-4 w-full">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

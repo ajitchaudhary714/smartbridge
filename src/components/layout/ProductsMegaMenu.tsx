@@ -116,7 +116,7 @@ export function ProductsMegaMenu() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="story-link">
+          <NavigationMenuTrigger className="story-link bg-none hover:bg-none">
             Products
           </NavigationMenuTrigger>
           <NavigationMenuContent className="z-50">

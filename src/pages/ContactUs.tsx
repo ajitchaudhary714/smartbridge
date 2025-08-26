@@ -40,7 +40,7 @@ export default function ContactPage() {
       {/* Contact Info */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 ">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 gap-8 ">
             {/* Phone Card */}
             <Card className="bg-gradient-to-br from-smartbridge-card-from to-smartbridge-card-to border-smartbridge-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-8">
