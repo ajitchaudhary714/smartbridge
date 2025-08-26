@@ -234,13 +234,13 @@ const Index = () => {
             <Card className="card-shadow">
               <CardContent className="p-8">
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  At SmartBridge, our cutting-edge edtech platform,
-                  "Skillwallet," serves as a catalyst for fostering
-                  collaboration between academia and industry. By providing
-                  project-based, collaborative learning solutions intricately
-                  woven into the curriculum, it empowers students to cultivate
-                  the essential technical and professional skills required to
-                  become job-ready candidates.
+                  At SmartBridge, our cutting-edge edtech platform "Skill
+                  Wallet" serves as a catalyst for fostering collaboration
+                  between academia and industry. By providing project-based,
+                  collaborative learning solutions intricately woven into the
+                  curriculum, it empowers students to cultivate the essential
+                  technical and professional skills required to become job-ready
+                  candidates.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   SmartBridge is dedicated to a momentous talent mission:{" "}

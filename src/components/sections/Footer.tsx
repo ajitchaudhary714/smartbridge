@@ -111,7 +111,7 @@ export default function SmartBridgeFooter() {
             {/* India Office */}
             <div className="mb-4">
               <h4 className="text-white font-medium uppercase mb-2">
-                India office
+                HYDERABAD office
               </h4>
               <address className="text-gray-300 text-sm leading-relaxed not-italic">
                 6th Floor, Sundarayya Vignana Kendram, Technical Block, Madhava
