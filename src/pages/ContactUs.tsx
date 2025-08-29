@@ -3,7 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import ContactForm from "@/components/sections/ContactForm"
 import Footer from "@/components/sections/Footer";
+
 const offices = [
   {
     city: "HYDERABAD",
@@ -25,7 +27,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen ">
       {/* Hero Section */}
-      <section className="bg-gradient-primary py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-primary py-20 px-4  sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
             Get In Touch
@@ -36,6 +38,9 @@ export default function ContactPage() {
           </p>
         </div>
       </section>
+      <div>
+        
+      </div>
 
       {/* Contact Info */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 ">
@@ -114,7 +119,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form (Static) */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-primary">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-primary">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -174,7 +179,8 @@ export default function ContactPage() {
             </CardContent>
           </Card>
         </div>
-      </section>
+      </section> */}
+      <ContactForm />
 
       <Footer />
     </div>
