@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import ContactForm from "@/components/sections/ContactForm"
+import ContactForm from "@/components/sections/ContactForm";
 import Footer from "@/components/sections/Footer";
 
 const offices = [
@@ -29,7 +29,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="bg-gradient-primary py-20 px-4  sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-3xl md:text-5xl font-semibold text-white mb-6 leading-tight">
             Get In Touch
           </h1>
           <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto leading-relaxed">
@@ -38,22 +38,20 @@ export default function ContactPage() {
           </p>
         </div>
       </section>
-      <div>
-        
-      </div>
+      <div></div>
 
       {/* Contact Info */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 ">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 ">
             {/* Phone Card */}
             <Card className="bg-gradient-to-br from-smartbridge-card-from to-smartbridge-card-to border-smartbridge-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <CardContent className="p-8">
+              <CardContent className="p-4 md:p-6">
                 <div className="flex items-center mb-4">
                   <div className="bg-gradient-primary p-3 rounded-full mr-4">
                     <Phone className="text-white text-xl h-6 w-6" />
                   </div>
-                  <h3 className="text-2xl font-semibold text-gray-800">
+                  <h3 className="text-xl md:text-2xl font-semibold text-gray-800">
                     Phone
                   </h3>
                 </div>
@@ -63,12 +61,12 @@ export default function ContactPage() {
 
             {/* Email Card */}
             <Card className="bg-gradient-to-br from-smartbridge-card-from to-smartbridge-card-to border-smartbridge-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <CardContent className="p-8">
+              <CardContent className="p-4 md:p-6">
                 <div className="flex items-center mb-4">
                   <div className="bg-gradient-primary p-3 rounded-full mr-4">
                     <Mail className="text-white text-xl h-6 w-6" />
                   </div>
-                  <h3 className="text-2xl font-semibold text-gray-800">
+                  <h3 className="text-xl md:text-2xl font-semibold text-gray-800">
                     Email
                   </h3>
                 </div>
@@ -83,9 +81,9 @@ export default function ContactPage() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-blue-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h1 className="text-2xl md:text-4xl  font-bold text-gray-900 mb-4">
               Our Office Locations
-            </h2>
+            </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Find us across three strategic locations to serve you better
             </p>
@@ -97,12 +95,12 @@ export default function ContactPage() {
                 key={office.city}
                 className="bg-white shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
-                <CardContent className="p-8">
+                <CardContent className="p-4 md:p-6">
                   <div className="flex items-center mb-6">
                     <div className="bg-gradient-primary p-3 rounded-full mr-4">
                       <MapPin className="text-white text-xl h-6 w-6" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-800">
+                    <h3 className="text-xl md:text-2xl font-bold text-gray-800">
                       {office.city}
                     </h3>
                   </div>

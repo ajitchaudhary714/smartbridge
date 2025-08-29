@@ -8,19 +8,20 @@ export default function Contact() {
 
   return (
     <section className="bg-gradient-primary  py-12 md:py-16 px-4">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h1 className="text-2xl md:text-4xl   font-semibold text-white mb-4">
             Send Us a Message
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Have a question or want to partner with us? We'd love to hear from you.
+            Have a question or want to partner with us? We'd love to hear from
+            you.
           </p>
         </div>
 
         {/* Form */}
-        <div className="form-container p-8 md:p-12 max-w-3xl mx-auto bg-white rounded-2xl">
+        <div className="form-container p-6 md:p-12 max-w-3xl mx-auto bg-white rounded-2xl">
           {isSubmitted && (
             <div className="success-message mb-6 text-green-500 flex items-center">
               <CheckCircle className="w-5 h-5 mr-2" />
@@ -36,65 +37,67 @@ export default function Contact() {
             }}
           >
             {/* Name */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div>
-                <label className="form-label" htmlFor="firstName">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6">
+              <div className="space-y-1 md:space-y-2">
+                <label className="form-label " htmlFor="firstName">
                   First Name *
                 </label>
                 <input
                   type="text"
                   id="firstName"
-                  className="input-field w-full px-4 py-2 border border-gray-300 rounded-md"
+                  className="input-field w-full px-4 py-3 border text-gray-400 border-gray-300 rounded-md"
                   placeholder="Enter your first name"
                 />
               </div>
-              <div>
+              <div className="space-y-1 md:space-y-2">
                 <label className="form-label" htmlFor="lastName">
                   Last Name *
                 </label>
                 <input
                   type="text"
                   id="lastName"
-                  className="input-field w-full px-4 py-2 border border-gray-300 rounded-md"
+                  className="input-field w-full px-4 py-3 border text-gray-400 border-gray-300 rounded-md"
                   placeholder="Enter your last name"
                 />
               </div>
             </div>
 
             {/* Email & Phone */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6">
+              <div className="space-y-1 md:space-y-2">
                 <label className="form-label" htmlFor="email">
                   Email Address *
                 </label>
                 <input
                   type="email"
                   id="email"
-                  className="input-field w-full px-4 py-2 border border-gray-300 rounded-md"
+                  className="input-field w-full px-4 py-3 border text-gray-400 border-gray-300 rounded-md"
                   placeholder="Enter your email address"
                 />
               </div>
-              <div>
+              <div className="space-y-1 md:space-y-2">
                 <label className="form-label" htmlFor="phone">
                   Phone Number *
                 </label>
                 <input
                   type="tel"
                   id="phone"
-                  className="input-field w-full px-4 py-2 border border-gray-300 rounded-md"
+                  className="input-field w-full px-4 py-3 border text-gray-400 border-gray-300 rounded-md"
                   placeholder="Enter your phone number"
                 />
               </div>
             </div>
 
             {/* Organization */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6">
+              <div className="space-y-1 md:space-y-2">
                 <label className="form-label" htmlFor="orgType">
                   Organization Type *
                 </label>
-                <select id="orgType"                   className="input-field w-full px-4 py-2 border border-gray-300 rounded-md"
->
+                <select
+                  id="orgType"
+                  className="input-field w-full px-4  h-[50px] border text-gray-400 border-gray-300 rounded-md"
+                >
                   <option value="">Select organization type</option>
                   <option value="industry">Company</option>
                   <option value="academia">Academia</option>
@@ -102,42 +105,42 @@ export default function Contact() {
                   <option value="other">Other</option>
                 </select>
               </div>
-              <div>
+              <div className="space-y-1 md:space-y-2">
                 <label className="form-label" htmlFor="orgName">
                   Organization Name *
                 </label>
                 <input
                   type="text"
                   id="orgName"
-                  className="input-field w-full px-4 py-2 border border-gray-300 rounded-md"
+                  className="input-field w-full px-4 py-3 border text-gray-400 border-gray-300 rounded-md"
                   placeholder="Enter your organization name"
                 />
               </div>
             </div>
 
             {/* Designation */}
-            <div className="mb-6">
+            <div className="space-y-1 md:space-y-2 mb-6 ">
               <label className="form-label" htmlFor="designation">
                 Designation *
               </label>
               <input
                 type="text"
                 id="designation"
-                  className="input-field w-full px-4 py-2 border border-gray-300 rounded-md"
+                className="input-field w-full px-4 py-3 border text-gray-400 border-gray-300 rounded-md"
                 placeholder="Enter your job title"
               />
             </div>
 
             {/* Enquiry */}
-            <div className="mb-8">
+            <div className="space-y-1 md:space-y-2 mb-6">
               <label className="form-label" htmlFor="enquiry">
                 Enquiry
               </label>
               <textarea
                 id="enquiry"
                 rows={5}
-                  className="input-field w-full px-4 py-2 border border-gray-300 rounded-md resize-none"
-                placeholder="Tell us about your inquiry..."
+                className="input-field w-full px-4 py-3 border text-gray-400 border-gray-300 rounded-md"
+                placeholder="Tell us about your Enquiry..."
               />
             </div>
 

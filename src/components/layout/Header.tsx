@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom"; // ✅ React Router
 import { Button } from "../ui/button"; // ✅ adjust relative path (no "@/...")
 import { SolutionsMegaMenu } from "./SolutionsMegaMenu";
+import { useNavigate } from "react-router-dom"; // ✅ Import navigate hook
+
 import { ProductsMegaMenu } from "./ProductsMegaMenu";
 import {
   Menu,
@@ -68,6 +70,7 @@ export const Header = () => {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [active, setActive] = useState<CategoryKey>("universities");
   const cat = categories[active];
+  const navigate = useNavigate(); // ✅ Add navigate hook
 
   const navCls = ({ isActive }: { isActive: boolean }) =>
     `${
@@ -119,9 +122,15 @@ export const Header = () => {
 
         {/* Actions + Mobile Button */}
         <div className="flex items-center gap-3">
-          <Link to="/contactus" className="hidden md:block">
-            <Button variant="hero">Get In Touch</Button>
-          </Link>
+          <Button
+            variant="hero"
+            onClick={() => {
+              navigate("/contactus"); // navigate to second page
+            }}
+            className="hidden md:block"
+          >
+            Get In Touch
+          </Button>
           {/* Hamburger */}
           <button
             className="md:hidden "
@@ -482,11 +491,19 @@ export const Header = () => {
               </a> */}
             </div>
             <div className="mt-auto">
-              <Link to="/contactus">
-                <Button variant="hero" className="mt-4 w-full">
-                  Get Started
-                </Button>
-              </Link>
+              {/* <Link to="/contactus" className=""> */}
+              <Button
+                variant="hero"
+                onClick={() => {
+                  navigate("/contactus"); // navigate to second page
+
+                  setMobileOpen(false); // close menu
+                }}
+                className="mt-4 w-full"
+              >
+                Get In Touch
+              </Button>
+              {/* </Link> */}
             </div>
           </div>
         </div>
