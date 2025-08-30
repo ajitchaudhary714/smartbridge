@@ -63,6 +63,13 @@ const categories: Record<CategoryKey, Category> = {
       "Scalable workforce development programs powered by experiential learning and AI-led initiatives for public sector impact.",
     cta: { label: "Explore", href: "/solution/government" },
   },
+  cfsi: {
+    label: "CFSi",
+    kind: "cta",
+    description:
+      "Scalable workforce development programs powered by experiential learning and AI-led initiatives for public sector impact.",
+    cta: { label: "Explore", href: "/solution/cfsi" },
+  },
 };
 
 export const Header = () => {
