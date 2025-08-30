@@ -64,7 +64,7 @@ const categories: Record<CategoryKey, Category> = {
     cta: { label: "Explore", href: "/solution/government" },
   },
   cfsi: {
-    label: "CFSi",
+    label: "CFSI",
     kind: "cta",
     description:
       "Scalable workforce development programs powered by experiential learning and AI-led initiatives for public sector impact.",
